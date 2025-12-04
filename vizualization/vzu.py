@@ -8,7 +8,7 @@ def visualise (X,labels, model):
     plt.figure(figsize=(8, 6))
     plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='tab10', s=50)
 
-    # Amélioration du rendu
+   
     plt.title(f"Visualization of the clustering {model}", fontsize=14)
     plt.xlabel("HPC")
     plt.ylabel("PFC")
