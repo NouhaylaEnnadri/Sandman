@@ -16,19 +16,25 @@
 
 The project is organized into two main distinct approaches: a CNN-based approach (semi-supervised/hybrid) and a Fully Unsupervised approach.
 
+
 ```bash
-project_root/
+├── 00_data/                     # Stockage des datasets (bruts et processés)
 │
-├── 01_cnn_approach/
-│   ├── 1a_cnn_supervised_model.ipynb        
-│   ├── 1b_unsupervised_by_state.ipynb       
-│   └── 1c_unsupervised_global_labeled.ipynb 
+├── 01_preprocessing/            # Scripts de nettoyage et transformation des données
 │
-├── 02_full_unsupervised/
-│   └── 2a_fully_unsupervised_model.ipynb
+├── 02_cnn_approach/             # Expérimentations avec l'architecture CNN
+│   ├── 2.0_cnn_model/           # Entraînement du modèle CNN supervisé
+│   ├── 2.1_unsupervised/        # Approche non-supervisée sur l'ensemble des données
+│   └── 2.2_unsupervised_by_state/ # Approche non-supervisée segmentée par état
 │
-└── README.md
+├── 03_full_unsupervised/        # Modélisation entièrement non-supervisée (clustering, etc.)
+│
+├── 04_deploy_hf/                # Fichiers pour le déploiement (ex: Hugging Face Spaces)
+│
+└── 05_visualization/            # Génération des graphiques et analyse des résultats
+
 ```
+
 ## Useful Links
 
 - [Review on automatic sleep scoring](https://pubmed.ncbi.nlm.nih.gov/36479908/)
