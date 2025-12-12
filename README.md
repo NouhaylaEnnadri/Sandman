@@ -18,20 +18,20 @@ The project is organized into two main distinct approaches: a CNN-based approach
 
 
 ```bash
-├── 00_data/                     # Stockage des datasets (bruts et processés)
+├── 00_data/                     # Stockage of datasets (raw and preprocessed)
 │
-├── 01_preprocessing/            # Scripts de nettoyage et transformation des données
+├── 01_preprocessing/            # Preprocessing and analyse through K-means
 │
-├── 02_cnn_approach/             # Expérimentations avec l'architecture CNN
-│   ├── 2.0_cnn_model/           # Entraînement du modèle CNN supervisé
-│   ├── 2.1_unsupervised/        # Approche non-supervisée sur l'ensemble des données
-│   └── 2.2_unsupervised_by_state/ # Approche non-supervisée segmentée par état
+├── 02_cnn_approach/             # Experimentation on CNN
+│   ├── 2.0_cnn_model/           # CNN model
+│   ├── 2.1_unsupervised/        # Unsupervised approach on the full data already labelled with the CNN
+│   └── 2.2_unsupervised_by_state/ # Unsupervised approach on the data divided by state
 │
-├── 03_full_unsupervised/        # Modélisation entièrement non-supervisée (clustering, etc.)
+├── 03_full_unsupervised/        # Modelisation fully unsupervised (clustering, etc.)
 │
-├── 04_deploy_hf/                # Fichiers pour le déploiement (ex: Hugging Face Spaces)
+├── 04_deploy_hf/                # Files for the deployement on Hugging Face Spaces
 │
-└── 05_visualization/            # Génération des graphiques et analyse des résultats
+└── 05_visualization/            # Script for the vizualisation (2D and 3D) 
 
 ```
 
