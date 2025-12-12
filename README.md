@@ -19,9 +19,4 @@
 - [Infographic summary from ESRS](https://esrs.eu/wp-content/uploads/2024/02/INFOGRAPHIC-Rodent-sleep-scoring.pdf)
 - [Recent article on biological data tools](https://www.nature.com/articles/s42003-025-07991-3)
 
-## Visuals
 
-![alt text](<WhatsApp Image 2025-09-10 at 23.52.23_d2b5056f.jpg>)  
-![alt text](image.png)
-
-```
