@@ -12,6 +12,23 @@
 - **Pre-sleep folders**: Present but not used.
 - **Focus**: We only use the `states` variable from post-trials, paired with raw neural signals.
 
+## Project Structure
+
+The project is organized into two main distinct approaches: a CNN-based approach (semi-supervised/hybrid) and a Fully Unsupervised approach.
+
+```bash
+project_root/
+│
+├── 01_cnn_approach/
+│   ├── 1a_cnn_supervised_model.ipynb        
+│   ├── 1b_unsupervised_by_state.ipynb       
+│   └── 1c_unsupervised_global_labeled.ipynb 
+│
+├── 02_full_unsupervised/
+│   └── 2a_fully_unsupervised_model.ipynb
+│
+└── README.md
+```
 ## Useful Links
 
 - [Review on automatic sleep scoring](https://pubmed.ncbi.nlm.nih.gov/36479908/)
