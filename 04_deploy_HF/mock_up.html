@@ -1,0 +1,73 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<div class="bg-gray-100 min-h-screen p-8 font-sans">
+  <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-2xl border border-gray-200 overflow-hidden">
+    
+    <header class="bg-slate-800 p-6 text-white flex justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-tight">Sandman</h1>
+      <div class="text-sm bg-slate-700 px-4 py-2 rounded-full italic">Signal Classification Dashboard</div>
+    </header>
+
+    <div class="p-8 grid grid-cols-12 gap-8">
+      
+      <div class="col-span-4 space-y-8">
+        <section class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+          <h2 class="font-bold text-gray-700 mb-3 uppercase text-xs">Learning Mode</h2>
+          <div class="space-y-2">
+            <label class="flex items-center space-x-3 cursor-pointer">
+              <input type="radio" name="mode" class="w-4 h-4 text-blue-600">
+              <span class="text-gray-600">Hybrid Mode</span>
+            </label>
+            <label class="flex items-center space-x-3 cursor-pointer">
+              <input type="radio" name="mode" class="w-4 h-4 text-blue-600">
+              <span class="text-gray-600">Full Data (Unsupervised)</span>
+            </label>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="font-bold text-gray-700 uppercase text-xs">Data Sources</h2>
+          <div class="flex gap-2">
+            <button class="flex-1 border-2 border-dashed border-blue-300 p-4 rounded-lg text-xs text-blue-600 hover:bg-blue-50 transition">Upload HPC</button>
+            <button class="flex-1 border-2 border-dashed border-blue-300 p-4 rounded-lg text-xs text-blue-600 hover:bg-blue-50 transition">Upload PFC</button>
+          </div>
+        </section>
+
+        <section class="p-4 bg-blue-50 rounded-lg border border-blue-100">
+          <h2 class="font-bold text-blue-800 text-xs mb-2">Main State Analysis (1-5)</h2>
+          <div class="h-24 bg-white rounded border border-blue-200 mb-3 flex items-center justify-center italic text-gray-400 text-xs text-center">
+             [State Visualization Preview]
+          </div>
+          <button class="w-full bg-blue-600 text-white py-2 rounded text-sm hover:bg-blue-700 transition">Download Main States</button>
+        </section>
+      </div>
+
+      <div class="col-span-8 space-y-8">
+        <section>
+          <h2 class="font-bold text-gray-700 mb-3 uppercase text-xs">Available Models</h2>
+          <select class="w-full p-3 border border-gray-300 rounded-lg bg-white shadow-sm focus:ring-2 focus:ring-blue-500">
+            <option>Gaussian Mixture Model (GMM)</option>
+            <option>K-Means Clustering</option>
+            <option>Hierarchical Clustering (HAC)</option>
+          </select>
+        </section>
+
+        <section class="relative">
+          <h2 class="font-bold text-gray-700 mb-3 uppercase text-xs text-center">Clustering Visualization</h2>
+          <div class="w-full h-80 bg-gray-50 rounded-xl border-2 border-gray-100 flex items-center justify-center shadow-inner overflow-hidden">
+            <div class="text-gray-400 italic">Interative Cluster Plot will render here...</div>
+          </div>
+          
+          <div class="absolute bottom-4 right-4">
+            <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full shadow-lg flex items-center space-x-2 transition transform hover:scale-105">
+              <span>Download Final Results</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
+      
+    </div>
+  </div>
+</div>
