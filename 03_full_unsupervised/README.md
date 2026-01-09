@@ -30,7 +30,3 @@ GMM assumes that the data is composed of several Gaussian distributions, each re
 *   **Modeling**: The pipeline uses 6 components with **full covariance matrices**, allowing the clusters to take flexible, elliptical shapes.
 *   **Insights**: The model provides **weights and means** for each component across all three signals, helping to define the biological profile of each discovered cluster.
 *   **Temporal Mapping**: Predicted labels are plotted against the original signal time-series, visualizing how the brain transitions between these unsupervised states over time.
-
----
-
-** calculates the probability that a book belongs to a certain genre, acknowledging that some books might be 70% "History" and 30% "Biography."
