@@ -2,7 +2,7 @@
 
 **Sleep Architecture: Building Smarter Tools for Biological Data**
 
-# The goal of this project is to find sleep substates (7 to 10). Indeed we already know that there are: Wake, Intermediate sleep, REM and NREM. So, the aim is to determine the substates in these 4 categories.
+### The goal of this project is to find sleep substates (7 to 10). Indeed we already know that there are: Wake, Intermediate sleep, REM and NREM. So, the aim is to determine the substates in these 4 categories.
 
 ## Dataset Structure
 
